@@ -1,0 +1,10 @@
+<div class="view">
+    {{#if session.isAuthenticated}}
+        <header class="main-header">
+            <h1>Ember Js JWT AUthentication Sample</h1>
+            <button {{action 'invalidateSession'}}>Logout</button>
+        </header>
+    {{/if}}
+    
+    {{outlet}}
+</div>
